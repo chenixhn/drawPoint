@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+    <script src="js/d3hull.js"></script>
+    <script src="js/generate.js"></script>
+</head>
+<body>
+<script src="js/init_canvas.js"></script>
+<script>
+var points = [];
+var canvas = new DrawCanvas();
+var DrawPoints = new DrawPoints(canvas);
+
+</script>
+</body>
+</html>
+<div>
+    <br>
+    <br>
+    <p>刻度距离为<span id="kedu"></span></p>
+    <button id="random" onclick="generateRadomPoints(canvas)">随机点</button>
+    <button id="btn" onclick="d3Draw(points,canvas.ctx)">生成图形</button>
+</div>
